@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Avatarctic - AI-Powered Software Development" />
+  <title>Avatarctic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f1117;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .header-content img {
+      max-width: 80px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    .headline {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #bbb;
+      max-width: 720px;
+      margin: 1rem auto 2rem;
+    }
+    .subheadline {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #bbb;
+      max-width: 720px;
+      margin: 1rem auto 2rem;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #00bfff;
+      text-align: center;
+    }
+    section h3 {
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    .navbar {
+      background-color: #1a1d26;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+    }
+    .nav-container {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      flex-wrap: wrap;
+    }
+    .nav-logo {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: #00bfff;
+      text-decoration: none;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: #00bfff;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .project-card {
+      flex: 1 1 280px;
+      background: #1c1f2a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      background-color: #00bfff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #009acd;
+    }
+    .btn-outline {
+      background: none;
+      border: 2px solid #00bfff;
+      color: #00bfff;
+    }
+    .btn-outline:hover {
+      background-color: #00bfff;
+      color: #0f1117;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span style="display: flex; align-items: center; gap: 0.5rem;">
+            <img src="logo-avatarctic.svg" alt="Avatarctic Logo" style="max-height: 96px;" />
+            <span>Avatarctic</span>
+          </span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#our-process">Process</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#tech">Tech</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <header>
+      <p class="headline">AI-Powered Digital Workflows for Regulated Industries</p>
+      <p class="subheadline">We are a compact expert team of software developers, architects, and analysts with roots in Israel’s tech and AI innovation ecosystem. We design and build custom AI-driven tools that automate documents, decisions, and dashboards for <strong>legal, finance, and healthcare</strong> workflows — with trust, speed, and clarity.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn">See Our Projects</a>
+        <a href="#contact" class="btn btn-outline">Get a Free Consultation</a>
+      </div>
+      <p>&nbsp;</p>
+    </header>
+
+    <section id="projects">
+      <h2>What We've Built</h2>
+      <p class="subheadline">Real-world examples of AI in action:</p>
+      <div class="projects">
+        <div class="project-card">
+          <h3>🔍 KYC Automation Platform</h3>
+          <p>Secure app that streamlines onboarding and verification for a FinTech client — integrating OCR, ID checks, and compliance workflows.</p>
+        </div>
+        <div class="project-card">
+          <h3>📝 AI Contract Summarizer</h3>
+          <p>Custom GPT-powered tool for a legal firm to auto-summarize lengthy contracts — reducing review time by 80%.</p>
+        </div>
+        <div class="project-card">
+          <h3>📁 Medical Record Sorting System</h3>
+          <p>AI-powered backend for a healthcare provider to organize unstructured patient documents with precision and HIPAA-compliant logic.</p>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p style="text-align: center; margin-top: 1rem;"><a href="#contact" class="btn btn-outline">Let’s talk about your use case</a></p>
+    </section>
+
+    <section id="how-we-work">
+      <h2>Our Approach</h2>
+      <p class="subheadline">We believe in:</p>
+      <ul>
+        <li>✅ <strong>Getting things done</strong>, not just building features</li>
+        <li>✅ <strong>Clear communication</strong>, short feedback loops</li>
+        <li>✅ <strong>Accountability</strong> for the full solution, not just the code</li>
+        <li>✅ Creative, pragmatic <strong>problem-solving</strong> with an engineering mindset</li>
+      </ul>
+    </section>
+
+    <section id="our-process">
+      <h2>Our Process</h2>
+      <p class="subheadline">We blend agile, proven engineering principles with modern AI technologies.</p>
+      <ul>
+        <li><strong>Rapid Discovery & Prototyping:</strong> understand the business and build an MVP quickly</li>
+        <li><strong>AI-Driven Architecture:</strong> API-first, modular, clean systems for scale and security</li>
+        <li><strong>Agile Delivery:</strong> weekly demos, feedback-focused Scrum process</li>
+        <li><strong>Bulletproof Engineering:</strong> CI/CD, TDD, Clean Code, DDD, Serverless & EDA when needed</li>
+      </ul>
+    </section>
+
+    <section id="services">
+      <h2>End-to-End Services</h2>
+      <p class="subheadline">We deliver all the services, from idea to live system:</p>
+      <ul>
+        <li>🔍 Business analysis & requirements gathering</li>
+        <li>🧠 Architecture & system design</li>
+        <li>🧑‍💻 Full-stack development</li>
+        <li>🧪 Testing & QA</li>
+        <li>🔄 CI/CD & Cloud infrastructure</li>
+        <li>🛠 Ongoing support & optimization</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p style="text-align: center; margin-top: 1rem;">
+      <a href="https://calendly.com/avatarctic/30min" class="btn btn-outline" target="_blank">Schedule a technical discovery call</a></p>
+    </section>
+
+    <section id="clients">
+      <h2>Who We Work With</h2>
+      <p class="subheadline">We serve <strong>small and medium businesses</strong>, startups, and global organizations. Our experience includes:</p>
+      <ul>
+        <li>🤝 FinTech startups</li>
+        <li>⚖️ Legal tech firms</li>
+        <li>🏥 Healthcare platforms</li>
+        <li>🌍 World Bank, UNDP, USAID</li>
+        <li>📰 Fortune 500 companies (via subcontracting)</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>We work confidentially and under NDAs where required.</p>
+    </section>
+
+    <section id="tech">
+      <h2>Tech We Use</h2>
+      <p class="subheadline">We use modern, reliable technologies:</p>
+      <ul>
+        <li><strong>Languages & Frameworks:</strong> Python, Golang, C#, C++, Node.js, React</li>
+        <li><strong>Cloud & DevOps:</strong> AWS, GCP, Azure, Kubernetes, Serverless, Docker, CI/CD pipelines</li>
+        <li><strong>AI/ML:</strong> OpenAI, Langchain, TensorFlow, private LLMs</li>
+      </ul>
+    </section>
+
+    <!--<section id="code">
+      <h2>Code Samples</h2>
+      <p class="subheadline">We believe in clean, readable, purposeful code.</p>
+      <p style="text-align: center;"><a href="https://github.com/repo" target="_blank" class="btn">View Our GitHub →</a></p>
+    </section>-->
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <form 
+        action="https://formspree.io/f/xjkoeadv"
+        method="POST"
+        style="max-width: 600px; margin: auto;"
+      >
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+        <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
+        <p style="text-align:center"><button type="submit" class="btn w-full">Send Message</button>&nbsp;&nbsp;
+      <a href="https://calendly.com/avatarctic/30min" class="btn btn-outline" target="_blank">Schedule a call</a></p>
+      </form>
+    </section>
+
+    <footer>
+      &copy; 2025 Avatarctic. All rights reserved.
+    </footer>
+  </div>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
