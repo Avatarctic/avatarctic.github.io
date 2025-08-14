@@ -129,6 +129,24 @@
     .project-card:hover {
       transform: translateY(-4px);
     }
+    .social-proof { margin: 3rem 0; }
+    .logo-grid {
+      display:flex; gap:2rem; justify-content:center; align-items:center; flex-wrap:wrap;
+      list-style:none; padding:0;
+    }
+    .logo-grid img {
+      background-color: white;
+      padding: 4px;              /* optional space inside */
+      border-radius: 4px;        /* optional rounded corners */
+      height: 32px;
+      width: auto;    
+    }
+    .logo-grid a:hover img, .logo-grid a:focus img {
+      opacity:1; transform: translateY(-2px);
+    }
+    @media (prefers-color-scheme: light) {
+      .logo-grid img { filter:none; } /* use original logo colors on light */
+    }
     .cta-buttons {
       display: flex;
       justify-content: center;
@@ -290,6 +308,27 @@
       <p class="subheadline">We believe in clean, readable, purposeful code.</p>
       <p style="text-align: center;"><a href="https://github.com/repo" target="_blank" class="btn">View Our GitHub →</a></p>
     </section>-->
+
+    <section class="social-proof">
+      <h2>Find Us in Professional Directories</h2>
+      <ul class="logo-grid">
+        <li>
+          <a href="https://www.linkedin.com/company/avatarctic" target="_blank" rel="noopener noreferrer" width="140" height="36">
+            <img src="assets/linkedin.svg" alt="LinkedIn" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://clutch.co/profile/avatarctic" target="_blank" rel="noopener noreferrer" width="140" height="36">
+            <img src="assets/clutch.svg" alt="Clutch" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.goodfirms.co/company/avatarctic" target="_blank" rel="noopener noreferrer" width="140" height="36">
+            <img src="assets/goodfirms.svg" alt="GoodFirms" loading="lazy">
+          </a>
+        </li>
+      </ul>
+    </section>
 
     <section id="contact">
       <h2>Get in Touch</h2>
