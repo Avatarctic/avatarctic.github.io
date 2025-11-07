@@ -218,6 +218,31 @@
       padding: 2rem 0;
       color: #666;
     }
+    /* Phones: hide the logo image & shrink the wordmark */
+    @media (max-width: 420px) {
+      /* hide the image only */
+      .nav-logo img {
+        display: none !important;
+      }
+
+      /* shrink the big blue wordmark */
+      .nav-logo {
+        font-size: clamp(1.2rem, 7vw, 1.6rem) !important;
+        line-height: 1.15;
+        white-space: normal;         /* allow wrapping if needed */
+        overflow-wrap: anywhere;     /* just in case the word must break */
+      }
+
+      /* slightly tighter spacing in the header row */
+      .nav-container {
+        gap: 0.5rem;
+      }
+
+      /* tighten the inner span that holds img + text */
+      .nav-logo > span {
+        gap: 0.25rem;
+      }
+    }
   </style>
 </head>
 <body>
